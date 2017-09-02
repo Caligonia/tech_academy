@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Drill</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">		
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>		
+		<!-- order form -->
+		<div id="menuBG">
+			<form id="frmMenu">
+				<h1 style="pizza">Academy Pizza</h1><br /><br />				
+				<table class="centered-table">
+					<!-- base menu pricing -->						
+					<tr>
+						<caption>Please make your selections here:<caption>
+						<td>								
+							<h4>Size:</h4>
+							<input class="size" type="radio" name="Size" value="Personal Pizza" checked> Personal Pizza<br />
+							<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br />
+							<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br />
+							<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br />
+						</td>
+						<td>
+							<h4>Meats:</h4>
+							<input class="meats" type="checkbox" name="Meat" value="Pepperoni" checked> Pepperoni<br />
+							<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br />
+							<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br /> 
+							<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br />
+							<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br />
+							<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br />	
+						</td>
+						<td>
+							<h4>Veggies</h4>
+							<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" checked> Tomatoes<br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Onions"> Onions <br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives<br /> 
+							<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers"> Green Peppers<br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Mushrooms<br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple<br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Spinach<br />
+							<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> Jalapeno<br />
+						</td>
+						<td>
+							<h4>Cheese:</h4>
+							<input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked> Regular Cheese<br />
+							<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br />
+							<input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese<br />	
+						</td>
+						<td>
+							<h4>Sauce:</h4>
+							<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" checked> Marinara Sauce<br />
+							<input class="sauce" type="radio" name="Sauce" value="White Sauce"> White Sauce<br />
+							<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce" > Barbeque Sauce<br />
+							<input class="sauce" type="radio" name="Sauce" value="No Sauce"> No Sauce<br />	
+						</td>
+						<td>
+							<h4>Crust:</h4>
+							<input class="crust" type="radio" name="Crust" value="Plain Crust" checked> Plain Crust<br />
+							<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br />
+							<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br />
+							<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br />
+							<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br />
+						</td>
+					</tr>
+				</table><br /><br />
+				<!-- ingredient modifier pricing -->
+				<table class="centered-table">
+				<caption>Please note that the following ingredients, if selected, will be added to the base pizza price:<caption><br />
+					<tr>
+						<td>Additional Meat items (first one is complementary):<br />
+						Additional Veggie items (first one is complementary):<br />
+						Base Cheese is complementary:<br />
+						Base Crust is complementary:<br />		
+						</td>						
+						<td>+$1.00 each additional Meat items.<br />
+						+$1.00 each additional Veggie items.<br />				
+						+$3.00 for Extra Cheese.<br />
+						+$3.00 for Cheese Stuffed Crust.
+						</td>
+					</tr>
+				</table>			
+			</form>
+			<br /><br />
+			<!-- get receipt -->
+			<table class="centered-table">
+				<tr>
+					<td>
+						<div class="receipt">
+							<input id="btnOrder" type="button" onclick="getReceipt()" 
+								value="Place Order">
+							<div id="cart">					
+								<div id="showText"></div>								
+								<div id="totalPrice"></div>
+							</div>
+						</div>
+					</td>
+					<!-- clear all -->
+					<td>
+						<div class="clear all">
+							<input id="btnOrder" type="button" onclick="getclearAll()" 
+								value="Clear Order">							
+						</div>
+					</td>	
+				</tr>		
+			</table>
+			<!-- scripts -->
+			<script type="text/javascript"></script>			
+			<script src="./js/final_drill_basic.js"></script>
+		</div>
+	</body>
+</html>
