@@ -7,20 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "c-sharp-projects1", ".", "{
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56879"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\tech_academy\c-sharp-projects\c-sharp-projects1\"
+		Debug.AspNetCompiler.PhysicalPath = "..\c-sharp-projects1\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56879\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_56879"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\tech_academy\c-sharp-projects\c-sharp-projects1\"
+		Release.AspNetCompiler.PhysicalPath = "..\c-sharp-projects1\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56879\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "56879"
+		SlnRelativePath = "..\c-sharp-projects1\"
 	EndProjectSection
 EndProject
 Global
